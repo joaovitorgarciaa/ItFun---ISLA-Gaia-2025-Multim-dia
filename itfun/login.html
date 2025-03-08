@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo512.png" type="image/x-icon">
+    <title>ItFun - Login</title>
+</head>
+
+
+
+<body>
+
+    <header>
+        <a href="#" onclick="abrirPaginaInicio()" id="button-inicio">
+            <div id="text-itfun">ItFun</div> <div id="traco">-</div> H O M E<img src="assets/mascote256.png" alt="" id="codey-logo">
+        </a>
+    </header>
+
+
+    <bg>
+        <div id="bg"><img src="assets/background.jpg" alt=""></div>
+    </bg>
+
+    <header>
+        <h1 id="titulo-geral">itFun - Login</h1>
+    </header>
+
+    <main>
+        <div id="fundo-registo">
+            <div id="registo-container">
+                <h2 id="titulo-reg">Painel de Login</h2>
+                <div id="registo">
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+
+                    <!-- Senha-->
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="password" minlength="8" required>
+                    </div>
+
+                    <!-- Botão -->
+                    <input type="submit" value="Login" onclick="fecharPaginaLogin()">
+                    <p>Ainda não tem uma conta?</p>
+                    <input type="submit" value="Registar" onclick="abrirPaginaRegistar2()" id="registrar">
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="login.js"></script>
+    <script src="registro.js"></script>
+    <script src="inicio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,720 @@
+/*PRINCIPAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-display: auto;
+    font-weight: auto;
+
+}
+
+
+li {
+    margin: 20px;
+    margin-inline-start: 10px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 20px;
+    margin-left: auto;
+    word-spacing: 5px;
+    padding-right: 50px;
+}
+
+body {
+    background-color: #000013;
+    font-size: clamp(1rem, 2.5vw, )
+}
+
+
+h1{
+    font-size: 4vw;
+    margin: 2vw;
+}
+
+h1 {
+    padding-top: 15px;
+    margin: 0; /* Remove qualquer margem padrão que possa desalinhar */}
+
+/*BACKGROUND*/
+
+#bg {
+    /*    background-image: url(assets/background.jpg);*/
+    background-image: url(assets/background.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #00000c;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    width: 1200px;
+    height: 800px;
+
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(5px) brightness(50%);
+    -webkit-filter: blur(5px) brightness(50%) contrast(120%);
+
+
+}
+
+
+
+/* MENU */
+
+#planos-botao {
+    font-size: 20px;
+    position: absolute;
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Alinha no canto direito */
+    margin: 10px; /* Adicione um espaçamento opcional */
+    margin-right: 200px;
+    margin-top: 40px;
+    margin-right: 340px;
+}
+
+#espaco-botao2{
+    font-size: 20px;
+    position: absolute;
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Alinha no canto direito */
+    margin: 10px; /* Adicione um espaçamento opcional */
+    margin-right: 310px;
+    margin-top: 40px;
+}
+
+#reg-botao {
+    margin-right: 30px;
+}
+
+#reg-botao {
+    font-size: 20px;
+    position: absolute;
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Alinha no canto direito */
+    margin: 10px; /* Adicione um espaçamento opcional */
+    margin-right: 200px;
+    margin-top: 40px;
+}
+
+
+#login-botao{
+    font-size: 20px;
+    position: absolute;
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Alinha no canto direito */
+    margin: 10px; /* Adicione um espaçamento opcional */
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+#espaco-botao{
+    font-size: 20px;
+    position: absolute;
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Alinha no canto direito */
+    margin: 10px; /* Adicione um espaçamento opcional */
+    margin-right: 175px;
+    margin-top: 40px;
+}
+
+
+
+
+
+#rodape {
+    position: absolute; /* Permite posicionar a imagem como fundo */
+    top: 0; /* Define a posição no topo */
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100px; /* Ajusta a altura conforme necessário */
+    background-size: cover; /* Garante que a imagem cubra a área */
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Certifica que está atrás de outros elementos */
+
+    
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(5px) brightness(50%);
+    -webkit-filter: blur(5px) brightness(50%) contrast(120%);
+
+}
+
+#menu {
+    margin-top: 20px;
+    position: relative; /* Garante que o menu fique à frente */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça os elementos do menu */
+    list-style: none;
+    margin-top: 20px;
+    margin-left: auto;
+    text-align: center;
+    z-index: 1; /* Coloca o menu à frente da imagem */
+
+}
+
+
+
+/* FONTE (LOGO) */
+#logo {
+    font-size: 50px;
+    margin-left: 40px;
+    animation: float3 10s infinite alternate;
+}
+
+
+/*botoes */
+
+#botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#login-botao {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+
+}
+
+#reg-botao {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+}
+
+
+#planos-botao {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+}
+
+
+#botao1 {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#botao2 {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#botao3 {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#botao4 {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#botao5 {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#botao6 {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    color: white;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#botao-planos {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1);
+    background-color: #ffffff;
+    background: linear-gradient(140deg, #4245fd 20%, #19029c 100%);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: auto;
+    font-size: 30px;
+    border-radius: 20px;
+    border-bottom: #000000;
+    animation: float2 10s infinite;
+
+    width: 300px; /* Ajuste o valor conforme necessário */
+    height: 60px; /* Ajuste o valor conforme necessário */
+    padding: 5px; /* Para controlar o espaço interno */
+}
+
+#text-planos {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente no próprio container */
+    align-items: center; /* Centraliza verticalmente no próprio container */
+}
+
+
+/*botoes HOVER */
+
+
+
+#login-botao:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+#planos-botao:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+
+#reg-botao:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+#botao1:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+
+
+#botao2:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+#botao3:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+#botao4:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+#botao5:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+#botao6:hover {
+    transform: scale(1.2);
+    color: rgb(58, 71, 255);
+    transform-style: initial;
+}
+
+
+
+
+/* TITULOS */
+.titles {
+    margin-left: 90px;
+    font-size: 70px;
+}
+
+
+#aprenda-title {
+    margin-left: -10px;
+    margin-left: 10px;
+}
+
+/* TEXTOS */
+
+#general {
+    margin-top: 50px;
+    background-color: #110751;
+    background: linear-gradient(160deg, #080026 30%, #130074 100%);
+    margin-right: 20px;
+    padding-right: 70px;
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+#aprenda {
+    margin-top: 100px;
+    background-color: #131026;
+    background: linear-gradient(160deg, #11102a 50%, #160083 100%);
+    margin-right: 20px;
+    display: block;
+    padding-right: 15px;
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 20px;
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+
+}
+
+
+#info {
+    background-color: #1b173b;
+    background: linear-gradient(90deg, #0b0e1a 45%, rgb(7, 0, 43));
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+#info-quem {
+    padding-bottom: 70px;
+    padding-left: 80px;
+    background-color: #1b173b;
+    background: linear-gradient(90deg, #06001c 45%, #0a0136);
+    padding: 20px;
+    padding-left: 80px;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+
+#games {
+    background: linear-gradient(160deg, #191243 10%, #02007d 100%);
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    border-radius: 30px;
+}
+
+#jogar-text {
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #0f0b1a;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+
+#hist {
+    background-color: #0f0b29;
+    background: linear-gradient(160deg, #11133f 10%, #00235e 100%);
+    margin-right: 20px;
+    display: block;
+    padding-right: 15px;
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 20px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+#hist-text {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 20px;
+    background-color: #0f0b29;
+    background: linear-gradient(180deg, #100d31, #00203a);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+
+#codey-info {
+    background-color: #0f0b29;
+    background: linear-gradient(180deg, #090051, #0059ac);
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+#codey-text {
+    background-color: #0f0b29;
+    background: linear-gradient(180deg, #0b005a, #00488b);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-right: 80px;
+}
+
+
+#footers {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: #454545;
+    background: linear-gradient(180deg, #2e2e2e 50%, #101010 100%);
+}
+
+#contact-text {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    height: 100vh;          /* Ocupa a altura total da janela */
+    width: 100%;            /* Garante largura total */
+    margin: 0;              /* Remove possíveis margens */
+    padding: 0;             /* Remove possíveis espaçamentos */
+    text-align: center;     /* Certifica que o texto está alinhado no centro */
+    box-sizing: border-box; /* Inclui padding/margin nas dimensões */
+}
+
+#espaco {
+    padding-left: 40px;
+    background: linear-gradient(180deg, #181818 50%, #000000 100%);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+#contact-text-intern {
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.line {
+    display: inline;
+    text-decoration: underline;
+}
+
+#opiniao {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.espaco2 {
+    padding-left: 20px;
+    padding-top: 40px;
+    display: inline;
+}
+
+.espaco3 {
+    display: inline;
+    padding-left: 40px;
+}
+
+#p-aprenda {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 25px;
+    margin: 0 auto;
+    margin: auto;
+    font-size: 30px;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    background-color: #02006c;
+    padding: 20px;
+    border: 4px solid #110157;
+    background: linear-gradient(180deg, #07002c 50%, #030011 100%); }
+
+/* IMAGENS */
+
+#mascote-parado {
+    height: 180px;
+    margin-bottom: -20px;
+    animation: float2 6s ease-in-out infinite;
+}
+
+#codey-logo {
+    width: 80px;
+    padding-left: -30px;
+    margin-left: -30px;
+}
+
+#codey-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+#codey-img {
+    transition: transform 5s ease;
+    cursor: pointer;
+    transform: scale(1);
+    border-radius: 100px;
+    animation: float 10s ease-in-out infinite;
+    height: 250px;
+    width: 250px;
+    background: url('assets/mascote5122.png') no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contacto-logo{
+    padding-left: 40px;
+    margin-top: -300px;
+}
+/* animações */
+
+
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100px);
+    }
+
+    50% {
+        transform: translateX(+100px);
+    }
+
+    75% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(+20px);
+    }
+
+    75% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float3 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+    
+
+    animation: float .3s .1s backwards;
+}
+}
+
+#botao-planos:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    transform-style: initial;
+}
+#codey-img:hover {
+    transform: scale(1.2);
+    animation: none;
+}
+
+
+
+
+
+
